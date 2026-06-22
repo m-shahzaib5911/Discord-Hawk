@@ -1,8 +1,17 @@
 # Discord-Hawk – Encrypted Discord C2 Implant Builder
 
 **Discord-Hawk** is a Python-based builder that produces fully-encrypted, stealth-enhanced Discord bot implants for authorized red-team engagements.
-
 Every payload is protected with AES-256-GCM, configured at build time with a random key, and includes automated forensic trace removal and hidden persistence.
+
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=flat-square&logo=python)](https://www.python.org/)
+[![discord.py](https://img.shields.io/badge/discord.py-2.0+-purple?style=flat-square&logo=discord)](https://discordpy.readthedocs.io/)
+[![Cryptography](https://img.shields.io/badge/Encryption-AES--256--GCM-red?style=flat-square)](https://cryptography.io/)
+[![PyInstaller](https://img.shields.io/badge/PyInstaller-6.0+-yellow?style=flat-square&logo=python)](https://pyinstaller.org/)
+[![Pillow](https://img.shields.io/badge/Pillow-10+-green?style=flat-square&logo=pillow)](https://python-pillow.org/)
+[![psutil](https://img.shields.io/badge/psutil-System-blue?style=flat-square)](https://github.com/giampaolo/psutil)
+[![License](https://img.shields.io/badge/License-MIT-purple?style=flat-square)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-Windows%20Only-orange?style=flat-square)](https://microsoft.com/windows)
+[![Stealth](https://img.shields.io/badge/Stealth-Advanced-red?style=flat-square)](https://github.com)
 
 > ⚠️ **STRICTLY FOR AUTHORISED USE** – Use only on systems you own or have explicit written permission to test.
 
