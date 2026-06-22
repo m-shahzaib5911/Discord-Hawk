@@ -2,6 +2,7 @@
 
 **Discord-Hawk** is a Python-based builder that produces fully-encrypted, stealth-enhanced Discord bot implants for authorized red-team engagements.
 Every payload is protected with AES-256-GCM, configured at build time with a random key, and includes automated forensic trace removal and hidden persistence.
+
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=flat-square&logo=python)](https://www.python.org/)
 [![discord.py](https://img.shields.io/badge/discord.py-2.0+-purple?style=flat-square&logo=discord)](https://discordpy.readthedocs.io/)
 [![Cryptography](https://img.shields.io/badge/Encryption-AES--256--GCM-red?style=flat-square)](https://cryptography.io/)
