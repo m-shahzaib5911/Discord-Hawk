@@ -26,9 +26,14 @@ def main():
     """
 
     print(BANNER)
+    print("""
+    ╔══════════════════════════════════════════════════════╗
+    ║              Discord Hawk C2 Implant Builder         ║
+    ║        Developer: Muhammad Shahzaib (CyberKnight)    ║
+    ║              GitHub: m-shahzaib5911                  ║
+    ╚══════════════════════════════════════════════════════╝
+    """)
     
-    print("\t    Discord Hawk C2 Implant Builder")
-    print("\t    -------------------------------\n")
     # Gather credentials
     bot_token = input("Discord Bot Token: ").strip()
     channel_id = input("Channel ID: ").strip()
