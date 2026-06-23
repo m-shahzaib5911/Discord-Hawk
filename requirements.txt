@@ -1,0 +1,8 @@
+cryptography
+pyinstaller
+discord.py
+pillow
+opencv-python
+numpy
+certifi
+aiohttp
